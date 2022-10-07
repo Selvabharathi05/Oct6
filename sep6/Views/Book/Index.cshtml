@@ -1,0 +1,26 @@
+﻿@using sep6.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>Custid</th>
+        <th>Custname</th>
+        <th>City</th>
+    </tr>
+    @foreach (Book item in (List<Book>)@ViewData["mybookList"])
+    {
+        <tr>
+
+            <td>@item.BookId</td>
+            <td>@item.BookName</td>
+            <td>@item.Author</td>
+
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,50 @@
+﻿@model sep6.Models.myproducts
+
+@{
+    ViewBag.Title = "SearchProductById";
+}
+
+<h2>SearchProductById</h2>
+
+<div>
+    <h4>myproducts</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Prodid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prodid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prodname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prodname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MfgDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MfgDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
